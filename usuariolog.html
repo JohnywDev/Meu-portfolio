@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuario logado</title>
+</head>
+<body>
+
+  <div id="boas-vindas">
+    <h1 id="nome-usuario"></h1>
+  </div>
+  <h1> Bem vindo</h1>
+  <a href="login.html"> voltar </a>
+  <div id="logged-message"></div>
+
+  <script>
+
+const nomeUsuario = document.getElementById('nome-usuario');
+const usuarioLogado = localStorage.getItem('username');
+
+if (usuarioLogado) {
+  nomeUsuario.innerText = `Bem-vindo, ${usuarioLogado}!`;
+} 
+  </script>
+  
+  <script src="js/script-cadastro.js"></script>
+  <script src="js/users.js"></script>
+</body>
+</html>

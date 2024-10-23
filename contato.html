@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - JohnyDevelop </title>
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+
+  <header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+
+      <button class="botao-hamburguer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <div class="menu-dropdown">
+        <a href="index.html" class="botao-dropdown">Home</a>
+        <a href="sobre.html" class="botao-dropdown">Sobre</a>
+        <a href="projetos.html" class="botao-dropdown">Projetos</a>
+        <a href="contato.html" class="botao-dropdown">Contato</a>
+      </div>
+      
+
+  </header>
+
+  <div class="avatar">
+    <img src="src/imagem-avatar.jpeg" alt="Avatar">
+  </div>
+
+  <main>
+    <h1>Contato</h1>
+    <form id="form-contato">
+        <form action="form.php" method="post"> 
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+        
+        <button id="enviar">Enviar</button>
+    </form>
+</main>
+
+<script src="js/script-contato.js"></script>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 JohnyDev. Todos os direitos reservados.</p>
+      <ul>
+        <li><a href="mailto:johnyvozon@gmail.com">E-mail</a></li>
+        <li><a href="#">Política de Privacidade</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/js.js"></script>
+
+
+</body>
+</html>
