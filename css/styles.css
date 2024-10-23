@@ -239,6 +239,10 @@ button:hover {
 @media (max-width: 768px) {
   .botao-hamburguer {
     display: block;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
   }
   
   nav {
@@ -256,6 +260,18 @@ button:hover {
     padding: 10px;
     font-size: 16px;
   }
+
+  nav.mostrar {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+  }
+  
   .menu-dropdown {
     z-index: 1;
   }

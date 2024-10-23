@@ -2,25 +2,24 @@
 
 const botaoHamburguer = document.querySelector('.botao-hamburguer');
 const menuDropdown = document.querySelector('.menu-dropdown');
+const avatar = document.querySelector('.avatar');
 
-botaoHamburguer.addEventListener('click', () => {
+function toggleMenu() {
   menuDropdown.classList.toggle('mostrar');
-});
+}
 
-window.addEventListener('resize', () => {
+function hideMenu() {
   if (window.innerWidth > 768) {
     menuDropdown.classList.remove('mostrar');
   }
-});
+}
 
-const avatar = document.querySelector('.avatar');
-
-avatar.addEventListener('mouseover', () => {
-  avatar.style.transform = 'scale(1.2)';
+function scaleAvatar(scale) {
+  avatar.style.transform = `scale(${scale})`;
   avatar.style.transition = 'transform 0.3s';
-});
+}
 
-avatar.addEventListener('mouseout', () => {
-  avatar.style.transform = 'scale(1)';
-  avatar.style.transition = 'transform 0.3s';
-});
+botaoHamburguer.addEventListener('click', toggleMenu);
+window.addEventListener('resize', hideMenu);
+avatar.addEventListener('mouseover', () => scaleAvatar(1.2));
+avatar.addEventListener('mouseout', () => scaleAvatar(1));
