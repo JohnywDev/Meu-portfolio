@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Compatível com celulares / computadores -->
     <link rel="stylesheet" href="style.css">
-    <title>DevClub - Netflix</title> <!-- Título do Site -->
+    <title>Clone - Netflix</title> <!-- Título do Site -->
 </head>
 
 <body>
@@ -17,7 +17,7 @@
             <img src="src/img/logo.png" class="img-topo">
         </li>
         <li>
-             <img src="src/img/avatar.png" class="img-topo"> 
+             <img src="src/img/avatar.png" class="avatar"> 
         </li>
     </ul>
 
@@ -68,7 +68,17 @@
         </a>
       </div>
 
-
+      <script> window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) { 
+          document.querySelector('.img-topo').classList.add('esconder');
+          document.querySelector('.avatar').classList.add('esconder');
+        } else {
+          document.querySelector('.img-topo').classList.remove('esconder');
+          document.querySelector('.avatar').classList.remove('esconder');
+        }
+      });
+      
+</script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

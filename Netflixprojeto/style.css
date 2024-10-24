@@ -18,7 +18,7 @@ ul {
     position: fixed;
 }
 
-.img-topo {
+.img-topo, .avatar {
     height: 25px;  /* Altura */
 }
 
@@ -79,10 +79,79 @@ video {
 .titulo-carrossel {
     color: white;
     font-size: 30px;   
-    margin-bottom: -5px;
+    margin-bottom: 5px;
 }
 
 /* 
     Classe = .
     ID = #
 */
+
+@media only screen and (max-width: 768px) {
+    body {
+      margin: 5px;
+    }
+    
+    ul {
+      height: 20px;
+      width: 90%;
+      flex-direction: column;
+    }
+    
+    .img-topo, .avatar{
+      height: 20px;
+      margin-top: -40px;
+      padding-bottom: 10px;
+      height: 25px;
+      position: fixed;
+      transition: top 0.5s;
+    }
+
+    .esconder {
+        top: -50px;
+      }
+    
+    video {
+      width: 100%;
+      min-height: 50vh;
+    }
+    
+    .capa {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      
+    }
+    
+    .capa-titulo {
+      font-size: 40px;
+      margin-bottom: 10px;
+      margin-top: 50px;
+
+    }
+    
+    .capa-descricao {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    
+    .link-assistir, .link-info {
+      padding: 5px 10px;
+    }
+    
+    .imagem-carrossel {
+      height: 100px;
+    }
+    
+    #carouselExampleControls {
+      position: relative;
+      bottom: 0;
+      left: 0;
+    }
+    
+    .titulo-carrossel {
+      font-size: 20px;
+    }
+  }
+  

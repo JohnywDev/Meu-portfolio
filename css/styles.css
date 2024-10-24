@@ -5,6 +5,7 @@ body {
   background: linear-gradient(90deg, #a8caba 0%, #6495ed 50%, #3f4c6b 100%); 
 }
 
+
 header {
   background-color: #333;
   padding: 20px;
@@ -236,6 +237,30 @@ button:hover {
   background-color: #444;
 }
 
+.redes-sociais {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  }
+  
+  .redes-sociais a {
+  margin: 0 10px;
+  font-size: 16px;
+  color: #fff;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  }
+  
+  .redes-sociais a:hover {
+  color: #ccc;
+  }
+  
+  .redes-sociais i {
+  margin-right: 10px;
+  font-size: 20px;
+  }
+  
 @media (max-width: 768px) {
   .botao-hamburguer {
     display: block;
