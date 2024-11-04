@@ -69,3 +69,21 @@ button[type="submit"]:hover {
 ::placeholder {
   color: #ccc;
 }
+
+.botao-voltar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3b3b3b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  }
+  
+  .botao-voltar:hover {
+  background-color: #bbb;
+  }
